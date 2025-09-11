@@ -326,7 +326,7 @@ function download_custom_orders_csv() {
 		);
 
         fputcsv($output, array(
-            'Order Number', 'Name', 'Product Link', 'Product image Link', 'Product ID', 'Quantity', 'Address', 'Phone', 'Email', 'Price', 'Order Status', 'Hold on Date', ));
+            'Order Number', 'Name', 'Product ID', 'Quantity', 'Address', 'Phone', 'Email', 'Price', 'Order Status', 'Hold on Date', ));
 
         foreach ($orders as $order) {
             $order_number   = $order->get_order_number();
@@ -371,8 +371,8 @@ function download_custom_orders_csv() {
             fputcsv($output, array(
                 $order_number,
                 $customer_name,
-                $product ? $product->get_permalink() : '',
-                implode(' | ', $image_urls),
+                //$product ? $product->get_permalink() : '',
+                //implode(' | ', $image_urls),
                 implode(', ', $product_names),
                 $total_quantity,
                 $clean_billing_address,
