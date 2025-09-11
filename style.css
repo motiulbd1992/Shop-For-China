@@ -1,0 +1,133 @@
+/*
+ Theme Name:   Woodmart Child
+ Description:  Woodmart Child Theme
+ Author:       XTemos
+ Author URI:   http://xtemos.com
+ Template:     woodmart
+ Version:      1.0.0
+ Text Domain:  woodmart
+*/
+
+:root{
+	--wd-main-bgcolor: linear-gradient(54deg, rgba(14, 14, 14, 1) 50%, rgba(57, 57, 57, 1) 86%);
+	--wd-form-brd-width: 1px;
+}
+[class*="color-scheme-light"] {
+    --wd-main-bgcolor: linear-gradient(54deg, rgba(14, 14, 14, 1) 50%, rgba(57, 57, 57, 1) 86%);
+	--brdcolor-gray-300:#fff;
+}
+.wd-nav[class*="wd-style-"] {
+    --nav-color: #fff;
+}
+
+body:not([class*="wrapper-boxed"]) {
+    background: var(--wd-main-bgcolor);
+}
+.whb-color-dark:not(.whb-with-bg) {
+    background-color: transparent;
+}
+.whb-sticky-header.whb-scroll-up .whb-general-header {
+    background: black !important;
+}
+form.woocommerce-checkout .woocommerce-account-fields {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -99;
+    margin-bottom: 0 !important;
+}
+input[type='email'], 
+input[type='date'], 
+input[type='search'], 
+input[type='number'], 
+input[type='text'], 
+input[type='tel'], 
+input[type='url'], 
+input[type='password'], 
+:root textarea, 
+:root select {
+    border-width:1px;
+}
+.woocommerce-billing-fields>h3,
+.woocommerce-column.woocommerce-column--shipping-address,
+form.woocommerce-checkout .woocommerce-shipping-fields,
+tfoot.order_actions {
+    display: none !important;
+}
+
+.woocommerce-column.woocommerce-column--billing-address .woocommerce-column__title{ font-size:0;}
+.woocommerce-column.woocommerce-column--billing-address .woocommerce-column__title:after{ content:"Customer Information"; font-size:22px;}
+form.woocommerce-checkout tr.shipping th {
+    font-size: 0;
+    padding: 0;
+}
+form.woocommerce-checkout tr.shipping td{ padding-left:0;}
+form.woocommerce-checkout tr.shipping .woocommerce-shipping-methods li label{
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+ul.order_history h6 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+	text-transform:uppercase;
+}
+ul.order_history li:before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    border: 2px solid #ed1c24;
+    top: 14px;
+    background: #ed1c24;
+}
+ul.order_history {
+    border-left: 2px solid #ed1c24;
+    list-style: none;
+    padding: 0 0px 0 20px;
+}
+ul.order_history li {
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.woocommerce-orders-table__cell--actions a {
+    padding: 5px 14px;
+    min-height: 36px;
+    font-size: 12px;
+    border-radius: var(--btn-accented-brd-radius);
+    color: var(--btn-accented-color);
+    box-shadow: var(--btn-accented-box-shadow);
+    background-color: var(--btn-accented-bgcolor);
+    text-transform: var(--btn-accented-transform, var(--btn-transform, uppercase));
+    font-weight: var(--btn-accented-font-weight, var(--btn-font-weight, 600));
+    font-family: var(--btn-accented-font-family, var(--btn-font-family, inherit));
+    font-style: var(--btn-accented-font-style, var(--btn-font-style, unset));
+    margin-left: 5px;
+}
+
+.woocommerce-orders-table__cell--actions a:hover{
+	color: var(--btn-accented-color-hover);
+    box-shadow: var(--btn-accented-box-shadow-hover);
+    background-color: var(--btn-accented-bgcolor-hover);
+}
+
+.wd-cat .wd-entities-title {
+    text-transform: none !important;
+    font-size: 18px !important;
+}
+
+.woocommerce-orders-table .woocommerce-orders-table__cell--actions a {
+    padding: 5px 8px;
+    min-height: 28px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.update_btn {
+    background: red !important;
+    color: white !important;
+}
