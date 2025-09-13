@@ -1,4 +1,4 @@
-<h1 align="center">Shop For China Motiul Islam</h1>
+<h1 align="center">Shop For China</h1>
 <h3 align="center">Sr. Web Developer</h3>
 
 <h3 align="left">Connect with me:</h3>
